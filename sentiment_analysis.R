@@ -291,7 +291,7 @@ leaflet(data = tb_locs) %>%
   addCircleMarkers(
     lng = ~longitude.y,
     lat = ~latitude.y,
-    radius = ~3 + 1.5 * abs(n),
+    radius = ~3 + 1.0 * abs(n),
     color = "tomato",
     fillOpacity = 0.75,
     label = ~sprintf("%s/%s: %d", mun, uf, n),
